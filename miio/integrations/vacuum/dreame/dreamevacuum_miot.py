@@ -507,7 +507,7 @@ class DreameVacuum(MiotDevice, VacuumInterface):
 
         return DreameVacuumStatus(
             {
-                prop["did"]: prop["value"] if prop["code"] == 0 else None
+                prop["did"]: prop.get("value") if prop["code"] == 0 else None
                 for prop in self.get_properties_for_mapping(max_properties=10)
             },
             self.model,
