@@ -116,5 +116,5 @@ disable_error_code = "misc,annotation-unchecked"
 
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry"]
+build-backend = "poetry.masonry.api"
